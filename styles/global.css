@@ -1,0 +1,26 @@
+@import url(./App.css);
+@import url(./navigation.css);
+@import url(./main.css);
+
+:root {
+  font-size: 62.5%;
+
+  --color-60: #565656;
+  --color-30: #252525;
+  --color-10: #5E81AC;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--white);
+  font-family: 'Roboto Mono', monospace;
+
+  background-color: var(--color-60);
+}
