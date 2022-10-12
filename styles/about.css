@@ -1,30 +1,30 @@
-main {
+#aboutMain {
   display: flex;
   gap: 10rem;
 
   padding: 10rem;
 }
 
-main .left {
+#aboutMain .left {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-main .left h1 {
+#aboutMain .left h1 {
   margin-bottom: 2rem;
 }
 
-main .left h2 {
+#aboutMain .left h2 {
   margin-bottom: 5rem;
 }
 
-main .left h2 span {
+#aboutMain .left h2 span {
   color: var(--color-10);
 }
 
-main .left .description {
+#aboutMain .left .description {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -32,7 +32,7 @@ main .left .description {
   line-height: 2.5rem;
 }
 
-main .right {
+#aboutMain .right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,25 +40,25 @@ main .right {
   gap: 3rem;
 }
 
-main .right img {
+#aboutMain .right img {
   width: 30rem;
 }
 
-main .right .links {
+#aboutMain .right .links {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5rem;
 }
 
-main .right .links .social-links {
+#aboutMain .right .links .social-links {
   display: flex;
   justify-content: space-around;
 
   width: 100%;
 }
 
-main .right button {
+#aboutMain .right button {
   background-color: var(--color-30);
   width: 20rem;
   height: 7rem;
@@ -69,4 +69,12 @@ main .right button {
   color: var(--white);
   font-size: 2.4rem;
   font-family: 'Roboto Mono', monospace;
+}
+
+#educationMain {
+  display: none;
+}
+
+#projectsMain {
+  display: none;
 }
