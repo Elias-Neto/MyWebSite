@@ -38,7 +38,7 @@ function focusNavigation(focusElement) {
   for (const index in focus) {
     if (focus[index]) {
       elements[index].classList.add('focus')
-      main[index].style.display = 'flex'
+      main[index].style.display = 'inherit'
     } else {
       elements[index].classList.remove('focus')
       main[index].style.display = 'none'

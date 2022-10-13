@@ -1,80 +1,71 @@
-#aboutMain {
-  display: flex;
-  gap: 10rem;
-
-  padding: 10rem;
-}
-
-#aboutMain .left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#aboutMain .left h1 {
+#aboutMain h1 {
   margin-bottom: 2rem;
 }
 
-#aboutMain .left h2 {
+#aboutMain h2 {
   margin-bottom: 5rem;
 }
 
-#aboutMain .left h2 span {
+#aboutMain span {
   color: var(--color-10);
 }
 
-#aboutMain .left .description {
+#aboutMain .description {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 
   line-height: 2.5rem;
+  text-align: center;
 }
 
-#aboutMain .right {
+#aboutMain img {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+#aboutMain .links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 3rem;
-}
-
-#aboutMain .right img {
-  width: 30rem;
-}
-
-#aboutMain .right .links {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 5rem;
+  gap: 2.5rem;
+
+  margin-bottom: 5rem;
 }
 
-#aboutMain .right .links .social-links {
-  display: flex;
-  justify-content: space-around;
-
-  width: 100%;
+#aboutMain .links svg {
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
-#aboutMain .right button {
+#aboutMain button {
   background-color: var(--color-30);
-  width: 20rem;
-  height: 7rem;
+  width: 8rem;
+  height: 4rem;
   border: none;
-  border-radius: 1rem;
+  border-radius: .5rem;
   cursor: pointer;
+}
 
+#aboutMain button a {
   color: var(--white);
-  font-size: 2.4rem;
   font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-#educationMain {
-  display: none;
+#aboutMain .links button a svg {
+  width: 2rem;
+  height: 2rem;
 }
 
-#projectsMain {
-  display: none;
+@media (min-width: 768px) {
+  #aboutMain img {
+    width: 18rem;
+  }
 }

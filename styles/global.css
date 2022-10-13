@@ -1,6 +1,9 @@
 @import url(./App.css);
 @import url(./navigation.css);
+@import url(./main.css);
 @import url(./about.css);
+@import url(./education.css);
+@import url(./projects.css);
 
 :root {
   font-size: 62.5%;
