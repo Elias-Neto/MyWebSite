@@ -12,6 +12,7 @@
   --color-30: #252525;
   --color-10: #5E81AC;
   --white: #fff;
+  --opacity-white: hsla(0, 0%, 100%, 0.7);
 }
 
 * {

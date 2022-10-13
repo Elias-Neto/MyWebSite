@@ -1,11 +1,4 @@
 #educationMain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-
   display: none;
 }
 
@@ -13,4 +6,48 @@
   background-color: var(--color-30);
   padding: 3rem;
   border-radius: 1rem;
+
+  text-align: center;
+}
+
+#educationMain .card:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+#educationMain .card h1 {
+  margin-bottom: 1.5rem;
+
+  font-size: 2.2rem;
+  color: var(--color-10);
+}
+
+#educationMain .card h2 {
+  margin-bottom: 3rem;
+
+  color: var(--opacity-white);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+#educationMain .card .wrapper {
+ display: flex;
+ justify-content: center;
+}
+
+#educationMain .card .wrapper button {
+  background-color: var(--color-60);
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#educationMain .card .wrapper button a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: .1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
