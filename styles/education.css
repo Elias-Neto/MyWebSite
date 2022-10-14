@@ -2,7 +2,13 @@
   display: none;
 }
 
-#educationMain .card {
+#educationMain ul {
+  list-style: none;
+  display: grid;
+  gap: 3rem;
+}
+
+#educationMain ul li {
   background-color: var(--color-30);
   padding: 3rem;
   border-radius: 1rem;
@@ -10,18 +16,14 @@
   text-align: center;
 }
 
-#educationMain .card:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-#educationMain .card h1 {
+#educationMain ul li h1 {
   margin-bottom: 1.5rem;
 
   font-size: 2.2rem;
   color: var(--color-10);
 }
 
-#educationMain .card h2 {
+#educationMain ul li h2 {
   margin-bottom: 3rem;
 
   color: var(--opacity-white);
@@ -29,19 +31,19 @@
   text-transform: uppercase;
 }
 
-#educationMain .card .wrapper {
+#educationMain ul li .wrapper {
  display: flex;
  justify-content: center;
 }
 
-#educationMain .card .wrapper button {
+#educationMain ul li .wrapper button {
   background-color: var(--color-60);
   border: none;
   padding: 1rem;
   border-radius: 1rem;
 }
 
-#educationMain .card .wrapper button a {
+#educationMain ul li .wrapper button a {
   text-decoration: none;
   color: var(--white);
   font-family: 'Roboto Mono', monospace;
@@ -53,5 +55,7 @@
 }
 
 @media (min-width: 1440px) {
-  
+  #educationMain ul {
+    grid-template-columns: 1fr 1fr;
+  }
 }
