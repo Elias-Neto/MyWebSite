@@ -2,13 +2,32 @@
   display: none;
 }
 
+#projectsMain .projectTagB {
+  display: none;
+}
+
 #projectsMain ul {
   list-style: none;
 }
 
+#projectsMain .projectTagName::before {
+  content: '';
+  width: 10rem;
+  height: .5rem;
+  background-color: var(--color-10);
+
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
 #projectsMain .projects {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+
   gap: 3rem;
+
+  margin-top: 3rem;
 }
 
 #projectsMain .projects li details {
@@ -16,15 +35,11 @@
   padding: 2rem;
   border-radius: 1rem;
   width: 100%;
-  cursor: pointer;
-}
-
-#projectsMain .projects li details:not(:last-child) {
-  margin-bottom: 2rem;
 }
 
 #projectsMain .projects li details summary {
   list-style: none;
+  cursor: pointer;
 }
 
 #projectsMain .projects li details summary .emoji {
@@ -37,8 +52,6 @@
 
 #projectsMain .projects li details .demonstration {
   width: 100%;
-  height: 10rem;
-  background-color: var(--white);
   margin-top: 2rem;
 }
 
@@ -96,8 +109,44 @@
   gap: 1rem;
 }
 
+#projectsMain .projectsTags {
+  margin-top: 3rem;
+}
+
+#projectsMain .projectsTags select {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  width: 26rem;
+  background-color: var(--color-30);
+  outline: none;
+  cursor: pointer;
+
+  font-family: 'Roboto Mono', monospace;
+  color: var(--white);
+}
+
+#projectsMain .projectsTags button {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--color-30);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-10);
+}
+
 @media (min-width: 1440px) {
   #projectsMain .projects {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #projectsMain .projects li details {
+    width: 70%;
+    margin: auto;
   }
 }
