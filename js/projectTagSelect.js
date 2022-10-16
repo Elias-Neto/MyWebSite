@@ -43,6 +43,8 @@ function projectTagSelect() {
       selectedProjectTag('b')
       break
     default:
-      break;
+      break
   }
+
+  scrollTo(0, 0)
 }
