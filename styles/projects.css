@@ -2,7 +2,9 @@
   display: none;
 }
 
-#projectsMain .projectTagB {
+#projectsMain .projectTagB,
+#projectsMain .projectTagC,
+#projectsMain .projectTagD {
   display: none;
 }
 

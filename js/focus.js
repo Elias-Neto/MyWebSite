@@ -44,4 +44,6 @@ function focusNavigation(focusElement) {
       main[index].style.display = 'none'
     }
   }
+
+  scrollTo(0, 0)
 }
