@@ -15,7 +15,7 @@
 WebSite desenvolvido para servir de portifólio e divulgação do meu progresso profissional. Ele é dividido em 3 partes: Sobre, Educação
 e Projetos. 
 
-Você pode me conhecer um pouco mais, conhecer minhas trajetórias educacionais e meus projetos que desenvolvi. 😄✌
+Você pode me conhecer um pouco mais, conhecer minhas trajetórias educacionais e os projetos que desenvolvi. 😄✌
 
 <br>
 
